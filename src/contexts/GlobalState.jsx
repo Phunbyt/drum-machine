@@ -5,18 +5,59 @@ export const GlobalState = createContext()
 export const GlobalStateProvider = ({ children }) => {
     const [pads, setPads] = useState([
       {
-        beatName: "808agogo",
+        beatName: "african-pe-med",
         beatKey: "Q",
-        beatLink: "./src/beats/808agogo.wav",
+        beatLink:
+          "https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/African%20and%20Eastern%20Percussion/91[kb]african-pe-med.wav.mp3",
       },
-      { beatName: "808bd2", beatKey: "W", beatLink: "./src/beats/808bd2.wav" },
-      { beatName: "909-bright-ohh", beatKey: "E", beatLink: "./src/beats/909-bright-ohh.wav" },
-      { beatName: "african-pe-lo", beatKey: "A", beatLink: "./src/beats/african-pe-lo.wav" },
-      { beatName: "badcow", beatKey: "S", beatLink: "./src/beats/badcow.wav" },
-      { beatName: "bell2", beatKey: "D", beatLink: "./src/beats/bell2.wav" },
-      { beatName: "clap808", beatKey: "Z", beatLink: "./src/beats/clap808.wav" },
-      { beatName: "curiouscym2", beatKey: "X", beatLink: "./src/beats/curiouscym2.wav" },
-      { beatName: "dissonant_tom", beatKey: "C", beatLink: "./src/beats/dissonant_tom.wav" },
+      {
+        beatName: "brightclap2",
+        beatKey: "W",
+        beatLink:
+          "https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Claps/16[kb]brightclap2.wav.mp3",
+      },
+      {
+        beatName: "curiouscym1",
+        beatKey: "E",
+        beatLink:
+          "https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Cymbals/104[kb]curiouscym1.wav.mp3",
+      },
+      {
+        beatName: "chh",
+        beatKey: "A",
+        beatLink:
+          "https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Hats/15[kb]chh.wav.mp3",
+      },
+      {
+        beatName: "808bd",
+        beatKey: "S",
+        beatLink:
+          "https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Kicks/20[kb]808bd.wav.mp3",
+      },
+      {
+        beatName: "analogbd2",
+        beatKey: "D",
+        beatLink:
+          "https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Kicks/46[kb]analogbd2.wav.mp3",
+      },
+      {
+        beatName: "909sd",
+        beatKey: "Z",
+        beatLink:
+          "https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Snares/33[kb]909sd.wav.mp3",
+      },
+      {
+        beatName: "iELECTRIBE-kick-11",
+        beatKey: "X",
+        beatLink:
+          "https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/iElectribe%20Kicks/47[kb]iELECTRIBE-kick-11.wav.mp3",
+      },
+      {
+        beatName: "dissonant_tom",
+        beatKey: "C",
+        beatLink:
+          "https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/Toms/39[kb]dissonant_tom.wav.mp3",
+      },
     ]);
 const [text, setText] = useState('')
   const state = {
