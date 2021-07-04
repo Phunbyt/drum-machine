@@ -1,0 +1,14 @@
+.drum_machine{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.padButt{
+    max-width: 300px;
+    flex:1;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    background-color: aqua;
+}
