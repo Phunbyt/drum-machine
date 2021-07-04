@@ -7,7 +7,7 @@ const DrumMachine = () => {
     const { pads } = useContext(GlobalState)
     
     const drumPads = pads.map((pad, idx) => {
-        return <DrumPad key={ idx} pad={pad}/>
+        return <DrumPad key={idx} pad={pad}/>
     })
     return (
       <div id="drum-machine" className="drum_machine">

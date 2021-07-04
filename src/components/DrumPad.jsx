@@ -14,7 +14,7 @@ const DrumPad = ({pad}) => {
         
     };
    const playKey = (e) => {
-     if (e.key == pad.beatKey.toLowerCase()) {
+     if (e.key.toUpperCase() == pad.beatKey) {
        const audio = audioElement.current;
        audio.currentTime = 0;
        audio.play();
@@ -27,9 +27,14 @@ const DrumPad = ({pad}) => {
    }, []);
     
     return (
-      <div className="drum-pad" onClick={playBeat}>
+      <div className="drum-pad" id={pad.beatKey} onClick={playBeat}>
         <h1>{pad.beatKey}</h1>
-        <audio src={pad.beatLink} ref={audioElement}></audio>
+        <audio
+          className="clip"
+          id={pad.beatKey}
+          src={pad.beatLink}
+          ref={audioElement}
+        ></audio>
       </div>
     );
 }

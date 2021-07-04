@@ -1,3 +1,4 @@
 .drum-pad{
     border: 2px solid red;
+    cursor: pointer;
 }
